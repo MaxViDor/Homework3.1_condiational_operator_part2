@@ -4,6 +4,7 @@ public class Main {
         task2 ();
         task3 ();
         task4 ();
+        task5 ();
 
     }
     public static void task1 () {
@@ -60,5 +61,38 @@ public class Main {
         } else {
             System.out.println("Доставки нет");
         }
+    }
+    public static void task5 () {
+        System.out.println("Задача 5");
+        int monthNumber = 9;
+        String season;
+
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                season = "зима";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                season = "весна";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                season = "лето";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                season = "осень";
+                break;
+            default:
+                System.out.println("Неверный номер месяца.");
+                return;
+        }
+
+        System.out.println(monthNumber + "-й месяц это " + season + ".");
     }
 }
